@@ -1,0 +1,12 @@
+{% set greeting %}Здравствуйте,
+{% if appeal %}{{ appeal }}{% endif %}
+{% if name %}{{ name }}{% endif %}
+{% if second_name %}{{ second_name }}{% endif %}
+{% if last_name %}{{ last_name }}{% endif %}!
+{% endset %}
+{{ greeting | replace('\n', ' ') | replace('  ', ' ') }}
+Минздрав предупреждает - курение опасно для Вашего здоровья!
+
+--
+С уважением,
+Миниздрав РФ
